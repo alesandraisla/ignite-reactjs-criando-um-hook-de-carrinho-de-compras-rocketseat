@@ -23,8 +23,8 @@ Modelo responsivo
 <h2>Layout Mobile e Desktop</h2>
 
 <div align="center">
-     <img src="./src/assets/images/mobile.png" width="250px" align="center"> 
-     <img src="./src/assets/images/mobile1.png" width="250px" align="center"> 
-    <img src="./src/assets/images/desktop.png" width="100%" align="center" height="600px">
-    <img src="./src/assets/images/desktop1.png" width="100%" align="center" height="600px">
+    <img src="./src/assets/images/mobile.png" width="250px" align="center"> 
+    <img src="./src/assets/images/mobile1.png" width="250px" align="center"> 
+    <img src="./src/assets/images/desktop.png" width="100%" align="center" >
+    <img src="./src/assets/images/desktop1.png" width="100%" align="center" >
 </div>
