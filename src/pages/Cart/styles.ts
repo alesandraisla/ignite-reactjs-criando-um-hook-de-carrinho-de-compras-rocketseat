@@ -27,6 +27,13 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (width: 435px) {
+    #cart-products td img {
+      height: 60px;
+    }
+  }
+  
 `;
 
 export const ProductTable = styled.table`

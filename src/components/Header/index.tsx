@@ -11,7 +11,7 @@ const Header = (): JSX.Element => {
   const cartSize =  cart.length;
 
   return (
-    <Container>
+    <Container id="items-header">
       <Link to="/">
         <img src={logo} alt="Rocketshoes" />
       </Link>
