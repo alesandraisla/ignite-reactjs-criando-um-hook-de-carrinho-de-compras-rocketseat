@@ -1,10 +1,11 @@
 import { Switch, Route } from 'react-router-dom';
+import { Dashboad } from './pages/Dashboard';
 
 
 const Routes = (): JSX.Element => {
   return (
     <Switch>
-      <Route path="/" exact component={Dashboard} />
+      <Route path="/" exact component={Dashboad} />
     </Switch>
   );
 };
