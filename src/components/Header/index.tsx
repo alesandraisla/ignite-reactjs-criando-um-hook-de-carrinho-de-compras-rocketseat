@@ -7,7 +7,7 @@ interface HeaderProps {
     onOpenModal: () => void;
 }
 
-export function Header({onOpenModal}: HeaderProps) {
+function Header({onOpenModal}: HeaderProps) {
     return(
         <Container>
             <header>
@@ -29,3 +29,5 @@ export function Header({onOpenModal}: HeaderProps) {
         </Container>
     )
 }
+
+export default Header;

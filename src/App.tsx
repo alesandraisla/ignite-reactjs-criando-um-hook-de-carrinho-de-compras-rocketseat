@@ -1,12 +1,16 @@
-import React from 'react';
-import { Food } from './components/Food';
-
 import Routes from './routes';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import { GlobalStyle } from './styles/global';
 
 const App = (): JSX.Element => {
   return (
-
-   <h1>oi</h1>
+    <>
+    <GlobalStyle/>
+    <Router>
+      <Routes/>
+    </Router>
+    </>
   );
 };
 
