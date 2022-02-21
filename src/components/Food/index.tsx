@@ -17,7 +17,7 @@ export type FoodType = {
     price: number;
     image: string;
     available: boolean;
-    };
+};
 
 export const Food = ({food, handleEditFood, handleDelete }: FoodProps) => {
 

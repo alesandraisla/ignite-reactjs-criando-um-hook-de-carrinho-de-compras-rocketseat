@@ -25,7 +25,7 @@ export function Dashboad() {
                 ...food, 
                 available: true,
             });
-            setFoods( state => [...state, response.data])
+            setFoods( foods => [...foods, response.data])
         } catch(err) {
             console.log(err)
         }
