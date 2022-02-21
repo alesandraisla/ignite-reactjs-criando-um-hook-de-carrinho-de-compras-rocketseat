@@ -1,49 +1,43 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled, { css } from 'styled-components';
 
-export const Container = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 50px 0;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  a {
-    transition: opacity 0.2s;
+export const Container = styled.div`
+    background: #c72828;
+    padding: 30px 0;
 
-    &:hover {
-      opacity: 0.7;
+    header {
+        width: 1280px;
+        margin: 0 auto;
+        padding: 0 0 160px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        nav {
+        div {
+            button {
+                font-weight: 600;
+                border-radius: 8px;
+                border: 0;
+                background: #39b100;
+                color: #fff;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .text {
+                    padding: 16px 24px;
+                }
+
+                .icon {
+                    display: flex;
+                    padding: 16px 16px;
+                    background: #41c900;
+                    border-radius: 0 8px 8px 0;
+                    margin: 0 auto;
+                    }
+                }
+            }
+        }
     }
-  }
-  @media (max-width: 320px) {
-    #items-header {
-      align-content: flex-start;
-      justify-content: center;
-      a {
-        margin-bottom: 10px;
-      }
-    }
-  }
-
-`;
-
-export const Cart = styled(Link)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-
-  div {
-    text-align: right;
-    margin-right: 10px;
-
-    strong {
-      display: block;
-      color: #fff;
-    }
-
-    span {
-      font-size: 12px;
-      color: #999;
-    }
-  }
-`;
+`

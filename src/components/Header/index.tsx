@@ -1,32 +1,31 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { MdShoppingBasket } from 'react-icons/md';
+import { FiPlusSquare } from "react-icons/fi";
+import { Container } from "./styles";
+import Logo from '../../assets/logo.svg';
 
-import logo from '../../assets/images/logo.svg';
-import { Container, Cart } from './styles';
-import { useCart } from '../../hooks/useCart';
 
-const Header = (): JSX.Element => {
-  const { cart } = useCart();
-  const cartSize =  cart.length;
+interface HeaderProps {
+    onOpenModal: () => void;
+}
 
-  return (
-    <Container id="items-header">
-      <Link to="/">
-        <img src={logo} alt="Rocketshoes" />
-      </Link>
-
-      <Cart to="/cart">
-        <div>
-          <strong>Meu carrinho</strong>
-          <span data-testid="cart-size">
-            {cartSize === 1 ? `${cartSize} item` : `${cartSize} itens`}
-          </span>
-        </div>
-        <MdShoppingBasket size={36} color="#FFF" />
-      </Cart>
-    </Container>
-  );
-};
-
-export default Header;
+export function Header({onOpenModal}: HeaderProps) {
+    return(
+        <Container>
+            <header>
+            <img src={Logo} alt="GoRestaurant" />
+            <nav>
+                <div>
+                <button
+                    type="button"
+                    onClick={onOpenModal}
+                >
+                    <div className="text">Novo Prato</div>
+                    <div className="icon">
+                    <FiPlusSquare size={24} />
+                    </div>
+                </button>
+                </div>
+            </nav>
+            </header>
+        </Container>
+    )
+}
